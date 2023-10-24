@@ -22,6 +22,9 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: 'us-east-1'
       
+      - name: Go Into Infrastructure Folder
+        run: cd infrastructure
+
       - name: Terraform Setup
         uses: hashicorp/setup-terraform@v1
 
