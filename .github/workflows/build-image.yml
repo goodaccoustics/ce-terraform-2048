@@ -6,7 +6,7 @@ on:
       - 'main'
     paths-ignore:
       - 'infrastructure/**'
-      - 'build-infrastructure.yml'
+      - 'github/workflows/build-infrastructure.yml'
 
 
 jobs:
