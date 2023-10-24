@@ -34,7 +34,9 @@ jobs:
         run: terraform validate -no-color
 
       - name: Terraform Plan
+        working-directory: infra
         run: terraform plan
     
       - name: Terraform Apply
+        working-directory: infra
         run: terraform apply --auto-approve
