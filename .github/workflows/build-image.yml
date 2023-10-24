@@ -39,7 +39,7 @@ jobs:
 
       - name: Tag the Image As The Latest
         working-directory: app
-        run: docker justinlim-ce-terraform-game2048-ecr:latest 255945442255.dkr.ecr.us-east-1.amazonaws.com/justinlim-ce-terraform-game2048-ecr:latest
+        run: docker tag justinlim-ce-terraform-game2048-ecr:latest 255945442255.dkr.ecr.us-east-1.amazonaws.com/justinlim-ce-terraform-game2048-ecr:latest
 
       - name: Push the Image to ECR
         run: docker push 255945442255.dkr.ecr.us-east-1.amazonaws.com/justinlim-ce-terraform-game2048-ecr:latest
