@@ -4,10 +4,8 @@ on:
   push:
     branches:
       - 'main'
-    paths-ignore:
-      - 'infrastructure/**'
-      - 'github/workflows/build-infrastructure.yml'
-
+    paths:
+      - 'app/**'
 
 jobs:
   build:
